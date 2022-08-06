@@ -3,6 +3,7 @@ services:
   name: advantage-api-staging
   plan: free
   env: docker
+  region: ohio
   autoDeploy: false
   healthCheckPath: /healthz
   envVars:
@@ -23,3 +24,4 @@ services:
 databases:
 - name: advantage-api-staging
   postgresMajorVersion: 14
+  region: ohio
